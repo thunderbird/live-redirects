@@ -1,0 +1,501 @@
+    RewriteEngine On
+
+    #Thunderbird 21.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(21.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.5
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.5)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.5esr
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.5esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.4
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.4)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.4esr
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.4esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 20.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(20.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.3
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.3)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.3esr
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.3esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 19.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(19.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0.2esr
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.2esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.12
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.12)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 17.0esr
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 18.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(18.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.11
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.11)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 16.0.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(16.0.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.10
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.10)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.9
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.9)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 16.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(16.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 16.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(16.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.8
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.8)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 15.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(15.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 15.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(15.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.7
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.7)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 14.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(14.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.6
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.6)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 13.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(13.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.5
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.5)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 13.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(13.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 12.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(12.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 12.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(12.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 11.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(11.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 11.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(11.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.4
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.4)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.3
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.3)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.20
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.20)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.19
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.19)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 10.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(10.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.18
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.18)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 9.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(9.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 9.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(9.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.17
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.17)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.16
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.16)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 8.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(8.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/8.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 7.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(7.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/7.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 7.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(7.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/7.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.15
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.15)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.14
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.14)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 6.0.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(6.0.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/6.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 6.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(6.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/6.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.13
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.13)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozilla.org/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.12
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.12)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 6.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(6.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/6.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 5.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(5.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/5.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 5.0b2
+    RewriteCond %{QUERY_STRING} (^|&)version=(5.0b2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozillamessaging.com/%2/thunderbird/5.0b2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.11
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.11)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 5.0b1
+    RewriteCond %{QUERY_STRING} (^|&)version=(5.0b1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozillamessaging.com/%2/thunderbird/5.0b1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.10
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.10)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.3a3
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.3a3)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.3a3/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.9
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.9)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.8
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.8)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.3a2
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.3a2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.3a2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.x EOL
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0(?:.\d+)?pre)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/eol/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.11
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.11)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.11/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.7
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.7)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.10
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.10)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.10/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.6
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.6)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.5
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.5)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.9
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.9)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.9/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.1 build1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)buildid=(20100701152743|20100701181850|20100701155236)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/nightly/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1.3
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.3)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+    
+    #Thunderbird 3.1.4
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1.4)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+    
+    #Thunderbird 3.1 RC1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)buildid=(20100526043820|20100526130412|20100526103039)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1rc1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1 (and RC2)
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.8
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.8)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.8/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.7
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.7)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.7/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.6
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.6)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.6/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.5
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.5)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.5/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.4
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.4)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.4/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.3
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.3)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.3/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.2
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 RC2
+    RewriteCond %{QUERY_STRING} (^|&)buildid=(20091130201643|20091130195224|20091130225757)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2rc2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 RC1
+    RewriteCond %{QUERY_STRING} (^|&)buildid=(20091112084939|20091112114927|20091112083919|20091117133512|20091117170600|20091117135707|20091121181041|20091121212410|20091121183158)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2rc1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1 Alpha 1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1a1)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1 Beta 2
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1b2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1b2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.1 Beta 1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.1b1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.1b1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 Beta 4
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0b4)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 Beta 3
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0b3)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 Beta 2
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0b2)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 Beta 1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.0b1)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3 Alpha 3
+    #The locale bit is to work around a bug in some urls (?locale=en-USversion=3.0a3) in some builds
+    RewriteCond %{QUERY_STRING} (&|locale=[a-zA-Z-]+)?version=(3.0a3)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/en-US/thunderbird/%2/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 3.3 Alpha 1
+    RewriteCond %{QUERY_STRING} (^|&)version=(3.3a1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.3a1/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      
+    #Thunderbird Earlybird
+    RewriteCond %{QUERY_STRING} (^|&)version=(\d{1,2}\.\da2)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/earlybird/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Everything else is considered a nightly
+    RewriteRule .* https://www.mozilla.org/en-US/thunderbird/nightly/start/?uri=%{REQUEST_URI} [QSA,R=302] 

@@ -1,0 +1,26 @@
+RewriteEngine On
+ExpiresActive On
+
+ExpiresDefault "now plus 6 hours"
+
+# External services
+RedirectMatch /autoconfig/(.*) 		https://autoconfig-live.mozillamessaging.com/autoconfig/$1
+RedirectMatch /dns/mx/(.*)		https://mx-live.mozillamessaging.com/dns/mx/$1
+
+# Snippets
+RewriteRule ^thunderbird/snippet 	http://www.mozillamessaging.com/en-US/thunderbird/nightly/snippet/?uri=%{REQUEST_URI} [QSA,R=302] 
+
+# Surveys
+RewriteRule ^survey/cancel/		http://www.surveygizmo.com/s/257775/thunderbird-3-cancel-install-survey [R=302]
+RewriteRule ^survey/uninstall/		http://www.surveygizmo.com/s/260450/thunderbird-3-uninstall-survey [R=302]
+
+# Plugin crashes
+RewriteCond %{REQUEST_URI} 		/thunderbird/plugin-crashed
+RewriteCond %{QUERY_STRING} 		(^|&)locale=([^?&]+)($|&)
+RewriteRule .* 				https://support.mozillamessaging.com/%2/kb/plugin-crash-reports?uri=%{REQUEST_URI} [QSA,R=302] 
+
+# Addon Searches
+RewriteCond %{REQUEST_URI}		/thunderbird/addons/search
+RewriteCond &%{QUERY_STRING}&%{QUERY_STRING}&%{QUERY_STRING}&%{QUERY_STRING} &locale=([^=&]+).*&q=([^=&]+).*&hver=([^=&]+).*&lver=([^=&]+)
+RewriteRule .* 				https://addons.mozilla.org/%1/thunderbird/search?q=%2&appid=18&hver=%3&lver=%4 [R=302,L]
+  
