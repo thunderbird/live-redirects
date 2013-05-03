@@ -3,6 +3,9 @@ ExpiresActive On
 
 ExpiresDefault "now plus 6 hours"
 
+# Test
+RewriteRule ^gozer/			http://gozer.ectoplasm.org/
+
 # External services
 RedirectMatch /autoconfig/(.*) 		https://autoconfig-live.mozillamessaging.com/autoconfig/$1
 RedirectMatch /dns/mx/(.*)		https://mx-live.mozillamessaging.com/dns/mx/$1
