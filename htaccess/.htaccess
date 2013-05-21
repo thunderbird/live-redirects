@@ -5,7 +5,7 @@ ExpiresDefault "now plus 6 hours"
 
 # External services
 RedirectMatch /autoconfig/(.*) 		http://autoconfig.thunderbird.net/$1
-RedirectMatch /dns/mx/(.*)		https://mx-live.mozillamessaging.com/dns/mx/$1
+RedirectMatch /dns/mx/(.*)		https://mx.thunderbird.net/dns/mx/$1
 
 # Snippets
 RewriteRule ^thunderbird/snippet 	http://www.mozillamessaging.com/en-US/thunderbird/nightly/snippet/?uri=%{REQUEST_URI} [QSA,R=302] 
