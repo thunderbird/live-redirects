@@ -1,7 +1,7 @@
     RewriteEngine On
 
     #Thunderbird 17.0.9esr
-    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.9esr)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)version=(17.0.9)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
