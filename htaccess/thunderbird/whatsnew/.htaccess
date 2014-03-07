@@ -1,5 +1,10 @@
     RewriteEngine On
 
+    #Thunderbird 28.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(28.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/28.0beta/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
     #Thunderbird 24.3.0
     RewriteCond %{QUERY_STRING} (^|&)version=(24.3.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
@@ -516,7 +521,7 @@
     RewriteCond %{QUERY_STRING} (^|&)version=(3.0.5)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.0.5/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
-    
+
     #Thunderbird 3.0.4
     RewriteCond %{QUERY_STRING} (^|&)version=(3.0.4)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
@@ -598,4 +603,4 @@
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/earlybird/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Everything else is considered a nightly
-    RewriteRule .* https://www.mozilla.org/en-US/thunderbird/nightly/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302] 
+    RewriteRule .* https://www.mozilla.org/en-US/thunderbird/nightly/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302]

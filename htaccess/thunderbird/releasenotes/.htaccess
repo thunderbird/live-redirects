@@ -1,5 +1,10 @@
     RewriteEngine On
 
+    #Thunderbird 28.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(28.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/28.0beta/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
     #Thunderbird 24.3.0
     RewriteCond %{QUERY_STRING} (^|&)version=(24.3.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
@@ -583,4 +588,4 @@
       RewriteRule .* http://www.mozillamessaging.com/%2/thunderbird/3.3a1/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Everything is considered a nightly
-    RewriteRule .* https://www.mozilla.org/en-US/thunderbird/nightly/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302] 
+    RewriteRule .* https://www.mozilla.org/en-US/thunderbird/nightly/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302]
