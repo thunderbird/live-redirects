@@ -1,5 +1,15 @@
     RewriteEngine On
 
+    #Thunderbird 24.8.1
+    RewriteCond %{QUERY_STRING} (^|&)version=(24.8.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/24.0/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    #Thunderbird 33.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(33.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/33.0beta/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
     #Thunderbird 24.8.0
     RewriteCond %{QUERY_STRING} (^|&)version=(24.8.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
