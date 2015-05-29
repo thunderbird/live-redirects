@@ -3,7 +3,7 @@
     #Thunderbird 38.0
     RewriteCond %{QUERY_STRING} (^|&)version=(38.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/33.0beta/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
 
     #Thunderbird 37.0
     RewriteCond %{QUERY_STRING} (^|&)version=(37.0)($|&)
