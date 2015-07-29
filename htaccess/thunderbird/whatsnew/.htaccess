@@ -1,5 +1,10 @@
     RewriteEngine On
 
+    #Thunderbird 40.0beta - starting now, betas will link directly to release notes
+    RewriteCond %{QUERY_STRING} (^|&)version=(40.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/40.0beta/releasenotes/ [QSA,R=302,L]
+
     #Thunderbird 38.1.0
     RewriteCond %{QUERY_STRING} (^|&)version=(38.1.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
@@ -10,7 +15,7 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
 
-    #Thunderbird 38.0
+    #Thunderbird 38.0 - starting now, releases will have the whats new information on SUMO
     RewriteCond %{QUERY_STRING} (^|&)version=(38.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
