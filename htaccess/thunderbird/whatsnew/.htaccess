@@ -5,18 +5,8 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/40.0beta/releasenotes/ [QSA,R=302,L]
 
-    #Thunderbird 38.1.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(38.1.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
-
-    #Thunderbird 38.0.1
-    RewriteCond %{QUERY_STRING} (^|&)version=(38.0.1)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
-
-    #Thunderbird 38.0 - starting now, releases will have the whats new information on SUMO
-    RewriteCond %{QUERY_STRING} (^|&)version=(38.0)($|&)
+    #Thunderbird 38.x - starting now, releases will have the whats new information on SUMO
+    RewriteCond %{QUERY_STRING} (^|&)version=(38.[\d\.]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
 
@@ -55,10 +45,10 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/32.0beta/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
-    #Thunderbird 31.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(31.0)($|&)
+    #Thunderbird 31.x
+    RewriteCond %{QUERY_STRING} (^|&)version=(31.[\d\.]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/31.0beta/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/31.0/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 24.7.0
     RewriteCond %{QUERY_STRING} (^|&)version=(24.7.0)($|&)
