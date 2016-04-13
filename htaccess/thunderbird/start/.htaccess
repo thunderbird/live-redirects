@@ -1,9 +1,9 @@
     RewriteEngine On
 
-    #Thunderbird 45.x - in beta
+    #Thunderbird 45.x
     RewriteCond %{QUERY_STRING} (^|&)version=(45.[\d\.]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 40.0beta - 44.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(4[01234].0)($|&)
