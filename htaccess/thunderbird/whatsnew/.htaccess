@@ -1,80 +1,38 @@
     RewriteEngine On
 
-    #Thunderbird 45.7.1
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.7.1)($|&)
+    #Thunderbird 45.2beta
+    RewriteCond %{QUERY_STRING} (^|&)version=(45.2)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/45.2beta/releasenotes/ [QSA,R=302,L]
+
+    #Thunderbird 45.*
+    RewriteCond %{QUERY_STRING} (^|&)version=(45.[^?&]+)($|&)
+      RewriteRule .* https://support.mozilla.org/kb/new-thunderbird-45 [QSA,R=302,L]
 
     #Thunderbird 52.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(52.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/52.0beta/releasenotes/ [QSA,R=302,L]
 
-    #Thunderbird 45.7.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.7.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
     #Thunderbird 51.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(51.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/51.0beta/releasenotes/ [QSA,R=302,L]
-
-    #Thunderbird 45.6.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.6.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
-    #Thunderbird 45.5.1
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.5.1)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
-    #Thunderbird 45.5.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.5.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
 
     #Thunderbird 50.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(50.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/50.0beta/releasenotes/ [QSA,R=302,L]
 
-    #Thunderbird 45.4.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.4.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
     #Thunderbird 49.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(49.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/49.0beta/releasenotes/ [QSA,R=302,L]
 
-    #Thunderbird 45.3.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.3.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
-    #Thunderbird 45.2.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.2.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
-
     #Thunderbird 47.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(47.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/47.0beta/releasenotes/ [QSA,R=302,L]
-
-    #Thunderbird 45.2beta
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.2)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/45.2beta/releasenotes/ [QSA,R=302,L]
-
-    #Thunderbird 45.0 - 45.1.1
-    #RewriteCond %{QUERY_STRING} (^|&)version=(45.[\d\.]+)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)version=(45.[01](\.\d+)?)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-45 [QSA,R=302,L]
 
     #Thunderbird 44.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(44.0)($|&)
