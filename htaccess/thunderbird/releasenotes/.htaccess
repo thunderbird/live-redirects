@@ -1,5 +1,10 @@
     RewriteEngine On
 
+    #Thunderbird 45.8.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(45.8.0)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/45.8.0/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
     #Thunderbird 45.7.1
     RewriteCond %{QUERY_STRING} (^|&)version=(45.7.1)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
