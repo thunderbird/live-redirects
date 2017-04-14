@@ -6,6 +6,11 @@
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/53.0beta/releasenotes/ [QSA,R=302,L]
 
     #Thunderbird 52.0
+    RewriteCond %{QUERY_STRING} (^|&)version=(52.0.1)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
+      RewriteRule .* https://support.mozilla.org/t5/Install-Migrate-and-Update/New-in-Thunderbird-52-0/ta-p/1371577 [QSA,R=302,L]
+
+    #Thunderbird 52.0
     RewriteCond %{QUERY_STRING} (^|&)version=(52.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://support.mozilla.org/t5/Install-Migrate-and-Update/New-in-Thunderbird-52-0/ta-p/1371577 [QSA,R=302,L]
