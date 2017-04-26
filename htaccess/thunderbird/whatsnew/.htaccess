@@ -5,15 +5,10 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/53.0beta/releasenotes/ [QSA,R=302,L]
 
-    #Thunderbird 52.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(52.0.1)($|&)
+    #Thunderbird 52.*
+    RewriteCond %{QUERY_STRING} (^|&)version=(52.[^?&]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/t5/Install-Migrate-and-Update/New-in-Thunderbird-52-0/ta-p/1371577 [QSA,R=302,L]
-
-    #Thunderbird 52.0
-    RewriteCond %{QUERY_STRING} (^|&)version=(52.0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://support.mozilla.org/t5/Install-Migrate-and-Update/New-in-Thunderbird-52-0/ta-p/1371577 [QSA,R=302,L]
+      RewriteRule .* https://support.mozilla.org/kb/new-thunderbird-52 [QSA,R=302,L]
 
     #Thunderbird 45.2beta
     RewriteCond %{QUERY_STRING} (^|&)version=(45.2)($|&)
