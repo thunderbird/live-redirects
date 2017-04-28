@@ -6,9 +6,8 @@
       RewriteRule .* https://www.mozilla.org/%2/thunderbird/53.0beta/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 52.*
-    RewriteCond %{QUERY_STRING} (^|&)version=(52.[^?&]+)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/52.%1/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=52.([^?&]+)($|&)
+      RewriteRule .* https://www.mozilla.org/%2/thunderbird/52.%3/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 45.8.0
     RewriteCond %{QUERY_STRING} (^|&)version=(45.8.0)($|&)
