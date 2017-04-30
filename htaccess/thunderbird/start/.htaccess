@@ -3,12 +3,12 @@
     # Thunderbird 53.0beta
     RewriteCond %{QUERY_STRING} (^|&)version=(53.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/beta/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://start.thunderbird.net/%2/beta/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 52.*
     RewriteCond %{QUERY_STRING} (^|&)version=(52.[^?&]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://www.mozilla.org/%2/thunderbird/release/start/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://start.thunderbird.net/%2/release/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     #Thunderbird 45.8.0
     RewriteCond %{QUERY_STRING} (^|&)version=(45.8.0)($|&)
