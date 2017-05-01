@@ -1,7 +1,7 @@
     RewriteEngine On
 
-    # Thunderbird 50-53.0beta
-    RewriteCond %{QUERY_STRING} (^|&)version=(5[1-3].0)($|&)
+    # Thunderbird 50, 51, and 53 beta
+    RewriteCond %{QUERY_STRING} (^|&)version=(5[013].0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://start.thunderbird.net/%2/beta/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
