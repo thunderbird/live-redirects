@@ -19,4 +19,4 @@
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/releases/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     # Everything else is considered a nightly
-    RewriteRule .* https://start.thunderbird.net/en-US/daily/uri=%{REQUEST_URI} [QSA,R=302]
+    RewriteRule .* https://start.thunderbird.net/en-US/daily/?uri=%{REQUEST_URI} [QSA,R=302]
