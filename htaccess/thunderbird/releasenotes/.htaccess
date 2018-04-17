@@ -8,13 +8,13 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=52.([^?&]+)($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/52.%3/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
-    # Thunderbird 45.8.0
+    # Thunderbird 45.8.0 - takes precedence over below rewrite.
     RewriteCond %{QUERY_STRING} (^|&)version=(45.8.0)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/45.8.0/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
-    # Thunderbird 0-45.*
-    RewriteCond %{QUERY_STRING} (^|&)version=([1-4]?[0-5]\.[^?&]+)($|&)
+    # Thunderbird 0-49.*
+    RewriteCond %{QUERY_STRING} (^|&)version=([1-4]?[0-9]\.[^?&]+)($|&)
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/releases/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
