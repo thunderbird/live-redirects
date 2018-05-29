@@ -27,3 +27,6 @@ RewriteRule .* 				https://addons.mozilla.org/%1/thunderbird/search?q=%2&appid=1
 # Addon Blocklist
 RewriteRule ^blocked.cdn/(.*) https://blocked.cdn.mozilla.net/$1
 RewriteRule ^blocklists.settings/(.*) https://blocklists.settings.services.mozilla.com/$1
+
+# Addon Services
+RewriteRule ^services.addons/(.*) https://services.addons.mozilla.org/$1
