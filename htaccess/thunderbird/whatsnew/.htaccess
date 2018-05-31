@@ -69,4 +69,4 @@
       RewriteRule .* https://support.mozilla.org/%2/kb/new-thunderbird-38 [QSA,R=302,L]
 
     # Everything else is considered a nightly
-    RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/nightly/whatsnew/?uri=%{REQUEST_URI} [QSA,R=302]
+    RewriteRule .* https://start.thunderbird.net/en-US/daily/?uri=%{REQUEST_URI} [QSA,R=302]
