@@ -17,16 +17,16 @@ RewriteRule ^survey/uninstall/		http://www.surveygizmo.com/s/260450/thunderbird-
 # Plugin crashes
 RewriteCond %{REQUEST_URI} 		/thunderbird/plugin-crashed
 RewriteCond %{QUERY_STRING} 		(^|&)locale=([^?&]+)($|&)
-RewriteRule .* 				https://support.mozillamessaging.com/%2/kb/plugin-crash-reports?uri=%{REQUEST_URI} [QSA,R=302]
+RewriteRule .* 				https://support.mozilla.org/%2/kb/plugin-crash-reports?uri=%{REQUEST_URI} [QSA,R=302]
 
 # Addon Searches
 RewriteCond %{REQUEST_URI}		/thunderbird/addons/search
 RewriteCond &%{QUERY_STRING}&%{QUERY_STRING}&%{QUERY_STRING}&%{QUERY_STRING} &locale=([^=&]+).*&q=([^=&]+).*&hver=([^=&]+).*&lver=([^=&]+)
-RewriteRule .* 				https://addons.mozilla.org/%1/thunderbird/search?q=%2&appid=18&hver=%3&lver=%4 [R=302,L]
+RewriteRule .* 				https://addons.thunderbird.net/%1/thunderbird/search?q=%2&appid=18&hver=%3&lver=%4 [R=302,L]
 
 # Addon Blocklist
 RewriteRule ^blocked.cdn/(.*) https://blocked.cdn.mozilla.net/$1
 RewriteRule ^blocklists.settings/(.*) https://blocklists.settings.services.mozilla.com/$1
 
 # Addon Services
-RewriteRule ^services.addons/(.*) https://services.addons.mozilla.org/$1
+RewriteRule ^services.addons/(.*) https://services.addons.thunderbird.net/$1
