@@ -1,7 +1,7 @@
     RewriteEngine On
 
     # Thunderbird Release 60+
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([0-9][0-9])([^?&]+)&channel=release($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([0-9][0-9][0-9]?)([^?&]+)&channel=release($|&)
       RewriteRule .* https://support.mozilla.org/kb/new-thunderbird-%3 [QSA,R=302,L]
 
     # Thunderbird 50-69 beta
