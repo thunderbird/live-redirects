@@ -1,9 +1,12 @@
     RewriteEngine On
 
-    # Thunderbird 50-69 beta
-    RewriteCond %{QUERY_STRING} (^|&)version=([5-6][013-9].0)($|&)
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)($|&)
-      RewriteRule .* https://start.thunderbird.net/%2/beta/?uri=%{REQUEST_URI} [QSA,R=302,L]
+    # Thunderbird Release 60+
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=release($|&)
+      RewriteRule .* https://start.thunderbird.net/%2/release/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    # Thunderbird Beta 60+
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=beta($|&)
+      RewriteRule .* https://start.thunderbird.net/en-US/beta/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     # Thunderbird 52.*
     RewriteCond %{QUERY_STRING} (^|&)version=(52.[^?&]+)($|&)
