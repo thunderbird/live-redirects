@@ -4,8 +4,8 @@ ExpiresActive On
 ExpiresDefault "now plus 6 hours"
 
 # External services
-RewriteRule ^autoconfig/addons\.json$  /autoconfig/addons.json [L]
-RewriteRUle ^autoconfig/(.*) 		https://autoconfig.thunderbird.net/$1
+RewriteRule ^autoconfig/addons\.json$   - [L]
+RewriteRule ^autoconfig/(.*) 		https://autoconfig.thunderbird.net/$1
 RewriteRule ^dns/mx/(.*)		https://mx.thunderbird.net/dns/mx/$1
 
 # Snippets
