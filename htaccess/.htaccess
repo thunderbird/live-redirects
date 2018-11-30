@@ -4,6 +4,7 @@ ExpiresActive On
 ExpiresDefault "now plus 6 hours"
 
 # External services
+RewriteRule ^/autoconfig/addons\.json$  /autoconfig/addons.json [L]
 RedirectMatch /autoconfig/(.*) 		https://autoconfig.thunderbird.net/$1
 RedirectMatch /dns/mx/(.*)		https://mx.thunderbird.net/dns/mx/$1
 
