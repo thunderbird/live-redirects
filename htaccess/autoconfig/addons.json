@@ -45,12 +45,7 @@
       {
         "generalType": "exchange",
         "protocolType": "owa",
-        "addonAccountType": "owl-owa"
-      },
-      {
-        "generalType": "exchange",
-        "protocolType": "eas",
-        "addonAccountType": "owl-eas"
+        "addonAccountType": "owl"
       }
     ]
   }
