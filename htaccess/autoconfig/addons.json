@@ -1,47 +1,57 @@
-{
-  "version": "1.0",
-  "addons": [
-    {
-      "id": "owl@beonex.com",
-      "names": {
-        "default": "Owl",
-        "en": "Owl",
-        "de": "Eule",
-        "fr": "Chouette",
-        "it": "Gufo",
-        "es": "Lechuza",
-        "pt": "Coruja",
-        "pl": "Sowa",
-        "ru": "Сова",
-        "ja": "梟 (Owl)"
+[
+  {
+    "id": "owl@beonex.com",
+    "name": {
+      "en": "Owl",
+      "en-US": "Owl",
+      "en-GB": "Owl",
+      "de": "Eule",
+      "fr": "Chouette",
+      "it": "Gufo",
+      "es": "Lechuza",
+      "es-ES": "Lechuza",
+      "es-AR": "Lechuza",
+      "pt": "Coruja",
+      "pt-PT": "Coruja",
+      "pt-BR": "Coruja",
+      "pl": "Sowa",
+      "ru": "Сова",
+      "ja": "梟 (Owl)",
+      "ja-JP": "梟 (Owl)"
+    },
+    "description": {
+      "en": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "en-US": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "en-GB": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "de": "Eule ist eine Erweiterung von einem Drittanbieter, die Ihnen erlaubt, einen Exchange-Server zu benutzen. Sie ist kostenpflichtig. Die Preise finden sie auf der Webseite.",
+      "fr": "Chouette est un addon payant qui vous permet d'accéder vos messages sur des serveurs Exchange. Voir le site pour les prix.",
+      "it": "Gufo è una componente aggiuntiva di terze parti a pagamento che consente di accedere al proprio account di posta elettronica sui server di Exchange. Vedi il sito web per i prezzi.",
+      "es": "Lechuza es un complemento pagado de terceros que le permite acceder a su cuenta de correo electrónico en los servidores de Exchange. Consulte el sitio web para precios.",
+      "es-ES": "Lechuza es un complemento pagado de terceros que le permite acceder a su cuenta de correo electrónico en los servidores de Exchange. Consulte el sitio web para precios.",
+      "es-AR": "Lechuza es un complemento pagado de terceros que le permite acceder a su cuenta de correo electrónico en los servidores de Exchange. Consulte el sitio web para precios.",
+      "pt": "Coruja é um complemento de terceiros pago que permite que você acesse sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pt-PT": "Coruja é um complemento de terceiros pago que permite que você acesse sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pt-BR": "Coruja é um complemento de terceiros pago que permite que você acesse sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pl": "Sowa jest płatnym dodatkiem innej firmy, który umożliwia dostęp do konta e-mail na serwerach Exchange. Zobacz ceny na stronie internetowej.",
+      "ru": "Сова - платный сторонний аддон, который позволяет вам получать доступ к вашей учетной записи электронной почты на серверах Exchange. См. Сайт по ценам.",
+      "ja": "梟は、Exchangeサーバー上の電子メールアカウントにアクセスできる有料のサードパーティアドオンです。 価格についてはウェブサイトを参照してください。",
+      "ja-JP": "梟は、Exchangeサーバー上の電子メールアカウントにアクセスできる有料のサードパーティアドオンです。 価格についてはウェブサイトを参照してください。"
+    },
+    "minVersion": "0.2",
+    "xpiURL": "https://addons.thunderbird.net/thunderbird/downloads/latest/owl-for-exchange/addon-986325-latest.xpi?src=thunderbird-accountcreation",
+    "websiteURL": "http://www.beonex.com/owl/",
+    "icon32": "http://www.beonex.com/owl/owl-32.png",
+    "accountTypes": [
+      {
+        "generalType": "exchange",
+        "protocolType": "owa",
+        "addonAccountType": "owl-owa"
       },
-      "descriptions": {
-        "default": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
-        "en": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
-        "de": "Eule ist eine Erweiterung von einem Drittanbieter, die Ihnen erlaubt, einen Exchange-Server zu benutzen. Sie ist kostenpflichtig. Die Preise finden sie auf der Website.",
-        "fr": "Chouette est un addon payant qui vous permet d'accéder vos messages sur des serveurs Exchange. Voir le site pour les prix.",
-        "it": "Gufo è un addon di terze parti a pagamento che consente di accedere al proprio account di posta elettronica sui server di Exchange. Vedi il sito web per i prezzi.",
-        "es": "Lechuza es un complemento pagado de terceros que le permite acceder a su cuenta de correo electrónico en los servidores de Exchange. Consulte el sitio web para precios.",
-        "pt": "Coruja é um complemento de terceiros pago que permite que você acesse sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
-        "pl": "Sowa jest płatnym dodatkiem innej firmy, który umożliwia dostęp do konta e-mail na serwerach Exchange. Zobacz ceny na stronie internetowej.",
-        "ru": "Сова - платный сторонний аддон, который позволяет вам получать доступ к вашей учетной записи электронной почты на серверах Exchange. См. Сайт по ценам.",
-        "ja": "梟は、Exchangeサーバー上の電子メールアカウントにアクセスできる有料のサードパーティアドオンです。 価格についてはウェブサイトを参照してください。"
-      },
-      "minVersion": "0.2",
-      "xpiURL": "https://addons.thunderbird.net/thunderbird/downloads/latest/owl-for-exchange/addon-986325-latest.xpi?src=thunderbird-accountcreation",
-      "websiteURL": "http://www.beonex.com/owl/",
-      "accountTypes": [
-        {
-          "generalType": "exchange",
-          "protocolType": "owa",
-          "addonAccountType": "owl-owa"
-        },
-        {
-          "generalType": "exchange",
-          "protocolType": "eas",
-          "addonAccountType": "owl-eas"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "generalType": "exchange",
+        "protocolType": "eas",
+        "addonAccountType": "owl-eas"
+      }
+    ]
+  }
+]
