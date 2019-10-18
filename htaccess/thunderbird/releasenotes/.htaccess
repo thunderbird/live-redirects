@@ -4,7 +4,11 @@
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=release($|&)
       RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
-    # Thunderbird 50-69 beta
+    # Thunderbird Beta
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=beta($|&)
+      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3beta/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
+    # Thunderbird 50-69 beta fallback
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([5-6][013-9].0)($|&)
       RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3beta/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
