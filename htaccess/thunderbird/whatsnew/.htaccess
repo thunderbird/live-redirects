@@ -1,8 +1,16 @@
     RewriteEngine On
 
+    # Thunderbird 78 temporary
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=(78.[^?&]+)&channel=(release|default)($|&)
+      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/78.0/releasenotes/ [QSA,R=302,L]
+
     # Thunderbird Release 60+
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([0-9][0-9][0-9]?)([^?&]+)&channel=(release|default)($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/%3.0/whatsnew/ [QSA,R=302,L]
+
+    # Thunderbird Beta
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=beta($|&)
+      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3beta/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     # Thunderbird 50-69 beta
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([5-6][013-9].0)($|&)
