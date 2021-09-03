@@ -1,9 +1,5 @@
     RewriteEngine On
 
-    # Temporary 91 redirect
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=(91.[^?&]+)&channel=(release|default)($|&)
-      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/91.0/releasenotes/ [QSA,R=302,L]
-
     # Thunderbird Release 60+
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([0-9][0-9][0-9]?)([^?&]+)&channel=(release|default)($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/%3.0/whatsnew/ [QSA,R=302,L]
