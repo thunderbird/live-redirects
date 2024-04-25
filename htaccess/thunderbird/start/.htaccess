@@ -1,7 +1,7 @@
     RewriteEngine On
 
     # Thunderbird Release 60+
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=(release|release-localtest|release-cdntest|default)($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=(esr|esr-localtest|esr-cdntest|release|release-localtest|release-cdntest|default)($|&)
       RewriteRule .* https://start.thunderbird.net/%2/release/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     # Thunderbird Beta 60+
