@@ -5,7 +5,7 @@
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/%3.0/whatsnew/ [QSA,R=302,L]
 
     # Thunderbird Extended Support Release 128.0+
-    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([0-9][0-9][0-9]?)([^?&]+)&channel=esr($|&)
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=esr($|&)
       RewriteRule .* https://www.thunderbird.net/%2/thunderbird/%3.0esr/whatsnew/ [QSA,R=302,L]
 
     # Thunderbird Beta

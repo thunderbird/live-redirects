@@ -6,7 +6,7 @@
 
     # Thunderbird Extended Support Release 128.0+
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=esr($|&)
-      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
+      RewriteRule .* https://www.thunderbird.net/en-US/thunderbird/%3esr/releasenotes/?uri=%{REQUEST_URI} [QSA,R=302,L]
 
     # Thunderbird Beta
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=beta($|&)
