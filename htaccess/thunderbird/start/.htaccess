@@ -1,5 +1,10 @@
     RewriteEngine On
 
+    # Thunderbird Release/Monthly test phase
+    RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=(release|release-localtest|release-cdntest)($|&)
+    RewriteCond %3 "-ge 129"
+      RewriteRule .* https://start.thunderbird.net/%2/monthly/?uri=%{REQUEST_URI} [QSA,R=302,L]
+
     # Thunderbird Release 60+
     RewriteCond %{QUERY_STRING} (^|&)locale=([^?&]+)&version=([^?&]+)&channel=(release|release-localtest|release-cdntest|default)($|&)
       RewriteRule .* https://start.thunderbird.net/%2/release/?uri=%{REQUEST_URI} [QSA,R=302,L]
